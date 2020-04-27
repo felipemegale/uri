@@ -3,22 +3,14 @@
 
 int main()
 {
-    double i, j;
-    int aux;
+    double i, j, aux;
 
     for (i = 0; i <= 2.0; i+=0.2)
     {
         for (j = 1; j <= 3.0; j++)
         {
-            if (i - (int)i == 0.0 || i > 1.8)
-            {
-                aux = (int)j+(int)i;
-                printf("I=%d J=%d\n", (int)i, aux);
-            }
-            else
-            {
-                printf("I=%.1lf J=%.1lf\n", i, j+i);
-            }
+            aux = j+i;
+            printf("I=%g J=%g\n", i, aux);
         }
     }
 
